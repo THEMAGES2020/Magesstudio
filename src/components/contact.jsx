@@ -133,6 +133,7 @@ function Contact() {
       <div
         className='absolute hidden  top-40 left-2/4  lg:block md:left-2/3  px-8 -py-1'
         style={{ zIndex: 1000 }}>
+        <a href="https://wa.me/+916238023468">
         <span
           className=' text-2xl font-bold text-white hover:text-blue-400 ease-in duration-150  my-4 flex '
           style={{ fontFamily: "sans" }}>
@@ -152,6 +153,8 @@ function Contact() {
           </svg>{" "}
           Click Here to whatsapp us{" "}
         </span>
+        </a>
+        <a href="mailto:Hello@mages.studio">
         <span
           className=' text-2xl font-bold text-white hover:text-blue-400 ease-in duration-150 text-right flex'
           style={{ fontFamily: "sans" }}>
@@ -170,6 +173,7 @@ function Contact() {
           </svg>
           hello@pitchday.com
         </span>
+        </a>
       </div>
 
       <div
