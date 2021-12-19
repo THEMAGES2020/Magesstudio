@@ -1,0 +1,211 @@
+import React from "react";
+import video from "../assets/22video.mp4";
+import videobannner2 from "../assets/videobannner2.jpg";
+import Mages from "../assets/Mages.png";
+
+function Dummyside() {
+  return (
+    <div
+      style={{ minHeight: "fit-content", width: "100vw" }}
+      className='pt-12 md:pt-0  '>
+      {/* <p>YOU DREAM IT ,WE DESIGN IT</p> */}
+      <div className='relative w-full  md:mt-0'>
+        <p
+          class='md:absolute md:top-2/4  md:transform	md:-translate-y-2/4 text-4xl p-3 text-gray-700 md:text-white md:text-6xl font-bold text-center'
+          style={{
+            fontWeight: 800,
+            left: "40%",
+            textTransform: "uppercase",
+            zIndex: 1,
+          }}>
+          Design is the silent ambassador of your brand
+        </p>
+        <img
+          src={Mages}
+          alt=''
+          className='w-40 h-40 absolute hidden md:block  mt-4  md:absolute top-2/3 md:top-2/4 transform	-translate-y-2/4 animate-pulse left-1/3  md:left-40'
+          style={{ zIndex: 1, filter: "brightness(1.2)" }}
+        />
+        <img
+          src={Mages}
+          alt=''
+          className='w-40 h-40 absolute md:hidden   mt-4  md:absolute top-2/3 md:top-2/4 transform	-translate-y-2/4 animate-pulse left-20'
+          style={{ zIndex: 1, filter: "brightness(1.2)" }}
+        />
+        <video
+          src={video}
+          autoPlay
+          loop
+          muted
+          className='relative  md:h-screen    w-full'
+          style={{
+            backgroundImage: videobannner2,
+            objectFit: "cover",
+            borderBottom: "25%",
+            top: "50%",
+            filter: "brightness(0.5)",
+            borderBottomRightRadius: "1%",
+            borderBottomLeftRadius: "1%",
+
+            //   transform: "translateY(-50%)",
+          }}></video>
+        <svg
+          fill='white'
+          width='100%'
+          className=' absolute hidden xl:block'
+          style={{ top: "94%", transform: "rotate(180deg)", zIndex: 1 }}
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>{" "}
+        <svg
+          fill='white'
+          width='100%'
+          className=' absolute  hidden md:block'
+          style={{ top: "-1%" }}
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+        <svg
+          fill='white'
+          width='100%'
+          className=' absolute   md:hidden  '
+          style={{ top: "94%", transform: "rotate(180deg)" }}
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+        <svg
+          fill='white'
+          width='100%'
+          className=' absolute md:hidden '
+          style={{ top: "97%", transform: "rotate(180deg)" }}
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>{" "}
+        <svg
+          fill='white'
+          width='100%'
+          className=' absolute md:hidden '
+          style={{ top: "96%", transform: "rotate(180deg)" }}
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+        <svg
+          fill='white'
+          width='100%'
+          className=' absolute hidden '
+          style={{ top: "37%" }}
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+        <svg
+          fill='white'
+          width='100%'
+          className=' absolute     '
+          style={{ top: "95%", transform: "rotate(180deg)" }}
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+        <svg
+          fill='red'
+          style={{ transform: "rotate(180deg)", top: "94%" }}
+          className='absolute  hidden md:flex'
+          width='100%'
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+        <svg
+          fill='white'
+          style={{ transform: "rotate(180deg)", top: "93%", zIndex: 1 }}
+          className='absolute  hidden md:flex'
+          width='100%'
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+        <svg
+          fill='white'
+          style={{ transform: "rotate(180deg)", top: "92%" }}
+          className='absolute  hidden md:flex'
+          width='100%'
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+        <svg
+          fill='white'
+          style={{ transform: "rotate(180deg)", top: "94.2%" }}
+          className='absolute  hidden md:flex'
+          width='100%'
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1289 56.85'>
+          <defs>
+            <style></style>
+          </defs>
+          <path
+            class='a'
+            d='M0,0V10.89c153.8,28.08,385.42,46,644.5,46S1135.2,39,1289,10.89V0Z'></path>
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+export default Dummyside;

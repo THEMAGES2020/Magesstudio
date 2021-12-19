@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.noscrollbar {
+  overflow: hidden;
+}
+.noscrollbar::-webkit-scrollbar {
+  /* display: none; */
+}
+.reachout {
+  background: linear-gradient(to right, #44b2e5 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  color: #44b2e5;
+}
+.reachout:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.logoclass {
+  filter: grayscale(100%);
+}
+.logoclass:hover {
+  filter: grayscale(0%);
+  color: red;
+}
+.mailogo {
+  flex-wrap: wrap;
+  
+  padding: 50px;
+}
+
+.banner__text__div {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+.block1 {
+  height: 90vh;
+}
+.block2 {
+  height: 90vh;
+}
+.block1:hover {
+  height: 95vh;
+  
+}
+.block2:hover {
+  height: 95vh;
+}
+
+.block1 .about__hovershow {
+  display: none;
+}
+.block1:hover .about__hovershow {
+  display: block;
+}
+.block1:hover .about__hover {
+  display: none;
+}
+.block2 .about__hovershow2 {
+  display: none;
+}
+.block2:hover .about__hovershow2 {
+  display: block;
+}
+.block2:hover .about__hover2 {
+  display: none;
+}
+
+.sociallogo {
+  border: 1px solid #44b2e5;
+
+  background: linear-gradient(to right, #44b2e5 50%, rgb(231, 228, 228) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  color: #44b2e5;
+  filter: grayscale(100%);
+}
+.sociallogo:hover {
+  background-position: left bottom;
+  filter: grayscale(0%);
+}
+
+.sociallogo2 {
+  border: 1px solid #44b2e5;
+
+  background: linear-gradient(to right, #44b2e5 50%, rgb(231, 228, 228) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  color: #44b2e5;
+
+}
+.sociallogo2:hover {
+  background-position: left bottom;
+  filter: grayscale(10%);
+}
+
+.sociallogo1 {
+  border: 1px solid #44b2e5;
+  /* filter: hue-rotate(180deg); */
+  background: linear-gradient(to right, #44b2e5 50%, rgb(231, 228, 228) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  color: #44b2e5;
+}
+.sociallogo1:hover {
+  background-position: left bottom;
+  filter: grayscale(0%);
+}
+
+.sociallogo3 {
+  border: 2px solid #44b2e5;
+
+  background: linear-gradient(to right, #44b2e5 50%, rgb(231, 228, 228) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  color: #44b2e5;
+}
+.sociallogo3:hover {
+  background-position: left bottom;
+  filter: grayscale(0%);
+}
+.sociallogo,
+.sociallogo1,
+.sociallogo2,
+.sociallogo3 {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  margin: 10px;
+  transition: all 0.5s ease-out;
+    filter: sepia(50%);
+
+}
