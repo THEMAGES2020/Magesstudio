@@ -33,15 +33,17 @@ function About() {
             <p
               className='font-bold text-4xl mt-3 md:text-5xl px-8  md:px-4 
              xl:text-gray-500'
-              style={{ color: "#4a4a4a" }}>
+              style={{ color: "#4a4a4a"        ,     fontFamily: "Poppins" ,fontWeight:700
+            }}>
               BRAND STRATEGY
             </p>
             <p
               style={{
                 color: "#747474",
                 lineHeight: 1.78,
-                fontFamily: "san-serif",
-                fontWeight: "400 !important",
+               
+                fontFamily: "Poppins" ,fontWeight:300
+
               }}
               className='p-2  px-8 md:px-5 text-xl md:text-xl lg:text-2xl '>
     <span className='about__hover2'>
@@ -68,17 +70,17 @@ function About() {
             <p
               className='font-bold text-4xl mt-3 md:text-5xl px-8  md:px-4 
              xl:text-gray-500'
-              style={{ color: "#4a4a4a" }}>
+              style={{ color: "#4a4a4a" ,        fontFamily: "Poppins" ,fontWeight:700}}>
               DESIGN SOLUTIONS
             </p>
             <p
               style={{
                 color: "#747474",
                 lineHeight: 1.78,
-                fontFamily: "san-serif",
-                fontWeight: 400,
+            fontFamily: "Poppins" ,fontWeight:300
+               
               }}
-              className='p-2 text-xl px-8 md:px-5 md:text-lg lg:text-2xl'>
+              className='p-2 text-xl px-8 md:px-5 md:text-lg lg:text-2xl  '>
               <span className='about__hover'>
                 Overcome every glitch on the way with techies like us on your
                 side!

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
 .App {
   text-align: center;
 }
@@ -79,11 +80,11 @@
   height: 90vh;
 }
 .block1:hover {
-  height: 95vh;
+  min-height: 95vh;
   
 }
 .block2:hover {
-  height: 95vh;
+  min-height: 95vh;
 }
 
 .block1 .about__hovershow {
@@ -108,7 +109,7 @@
 .sociallogo {
   border: 1px solid #44b2e5;
 
-  background: linear-gradient(to right, #44b2e5 50%, rgb(231, 228, 228) 50%);
+  background: linear-gradient(to right, #44b2e5 50%, rgb(255, 255, 255) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -123,7 +124,7 @@
 .sociallogo2 {
   border: 1px solid #44b2e5;
 
-  background: linear-gradient(to right, #44b2e5 50%, rgb(231, 228, 228) 50%);
+  background: linear-gradient(to right, #44b2e5 50%, rgb(255, 255, 255) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -138,7 +139,7 @@
 .sociallogo1 {
   border: 1px solid #44b2e5;
   /* filter: hue-rotate(180deg); */
-  background: linear-gradient(to right, #44b2e5 50%, rgb(231, 228, 228) 50%);
+  background: linear-gradient(to right, #44b2e5 50%, rgb(255, 255, 255) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -152,7 +153,7 @@
 .sociallogo3 {
   border: 2px solid #44b2e5;
 
-  background: linear-gradient(to right, #44b2e5 50%, rgb(231, 228, 228) 50%);
+  background: linear-gradient(to right, #44b2e5 50%, rgb(255, 255, 255) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;

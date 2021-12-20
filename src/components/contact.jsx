@@ -95,7 +95,7 @@ function Contact() {
               Contact
             </p>
           </Link>{" "}
-          <a href='https://medium.com'>
+          <a href='https://medium.com/@Mages.Studio'>
             {" "}
             <p
               className='text-xl font-bold p-2 px-6 ease-in duration-100 text-white hover:text-blue-300'
@@ -131,12 +131,13 @@ function Contact() {
       </div>
 
       <div
-        className='absolute hidden  top-40 left-2/4  lg:block md:left-2/3  px-8 -py-1'
+        className='absolute hidden  top-40 left-2/4  lg:block md:left-2/4  md:mx-14  px-8 -py-1'
         style={{ zIndex: 1000 }}>
+          <span className="text-2xl font-bold text-white">If you don’t tell us, we’ll never know.</span>
         <a href="https://wa.me/+916238023468">
         <span
           className=' text-2xl font-bold text-white hover:text-blue-400 ease-in duration-150  my-4 flex '
-          style={{ fontFamily: "sans" }}>
+          style={{ fontFamily: "Poppins" ,fontWeight:300}}>
           <svg
           className="w-8 h-8 mx-3 animate-pulse"
             fill='currentcolor'
@@ -177,17 +178,17 @@ function Contact() {
       </div>
 
       <div
-        className=' mb-12 p-2 py-6 absolute  w-full top-2/4  '
+        className=' mb-12 p-2 py-6 absolute  w-full  top-2/4  '
         id='new'
         style={{ zIndex: 100 }}>
         <p
           style={{ fontWeight: 800, color: "#44b2e5  " }}
-          className='text-4xl md:text-5xl  mt-40 mb-8 xl:text-5xl mx-4 md:mx-24'>
+          className='text-4xl md:text-5xl  mt-40 mb-8 xl:text-5xl mx-4 md:mx-12'>
           <span className='text-3xl text-white'> START A </span>
           <br />
-          NEW PROJECT
+          NEW PROJECT ?
         </p>
-        <div className=' w-full md:w-5/6 border-2 border-blue-100 m-auto shadow-lg px-4 py-10 bg-white'>
+        <div className=' w-full border-2 border-blue-100 m-auto shadow-lg px-4 py-10 bg-white md:mt-16' style={{width:"90vw"}}>
           <p
             className=' text-xl md:text-2xl p-2 m-4'
             style={{ fontWeight: 800, color: "#4a4a4a" }}>

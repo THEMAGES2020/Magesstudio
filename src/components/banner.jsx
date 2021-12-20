@@ -25,7 +25,7 @@ function Banner() {
           <p
             className='text-blue-300 p-4 w-4/5 text-3xl'
             style={{
-              fontFamily: "poppins",
+              fontFamily: "Poppins sans-serif",
               color: "#44b2e5",
               fontWeight: 700,
             }}>
@@ -41,7 +41,13 @@ function Banner() {
             </p>
           </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
-
+          <a href="https://medium.com/@Mages.Studio">
+            {" "}
+            <p className='text-white p-4 w-full text-xl  text-center'>
+              Blog
+            </p>
+          </a>
+          <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
           <a href='https://wa.me/+916238023468'>
             <p className='text-white p-4 w-full text-xl text-center'>
               Click <span style={{ color: "#44b2e5" }}> here </span>to Whatsapp
@@ -90,7 +96,7 @@ function Banner() {
               Contact
             </p>
           </Link>{" "}
-          <a href='https://medium.com'>
+          <a href='https://medium.com/@Mages.Studio'>
             {" "}
             <p
               className='text-xl font-bold p-2 px-6 ease-in duration-100 text-white hover:text-blue-300'
@@ -118,8 +124,15 @@ function Banner() {
             backgroundRepeat: "no-repeat",
           }}
         />
-        <div className='banner__text__div  top-2/4 transform -translate-y-2/4	 p-4 md:px-20  md:py-24  absolute text-5xl md:text-7xl '>
-          <h1 className='text-white font-black '>WE </h1>
+        <div
+          className='banner__text__div  top-2/4 transform -translate-y-2/4	 p-4 md:px-20  md:py-24  absolute text-5xl md:text-7xl '
+          style={{ fontFamily: "Poppins" ,fontWeight:800}}>
+          <h1
+            className='text-white font-black '
+           // style={{ fontFamily: "Poppins sans-serif" }}
+            >
+            WE{" "}
+          </h1>
           <span className='text-white'>DESIGN </span>
           <h1 style={{ color: "#44b2e5" }}>TO ELAVATE.</h1>
           <span
@@ -130,7 +143,7 @@ function Banner() {
             }}>
             <Link to='/contact'>
               {" "}
-              <p className='mr-2' style={{ fontFamily: "poppins" }}>
+              <p className='mr-2' style={{ fontFamily: "Poppins" }}>
                 {" "}
                 REACH OUT TO US{" "}
               </p>

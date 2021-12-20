@@ -5,7 +5,7 @@ function footer() {
   return (
     <div
       className=' flex flex-col md:flex-row justify-between  md:p-16 items-start   w-9/12 m-auto  md:w-full'
-      style={{ minHeight: "fit-content" }}>
+      style={{ minHeight: "90vh" }}>
       <div>
         <p
           className=' text-2xl md:text-4xl lg:text-5xl  font-extrabold text-center'
@@ -13,15 +13,15 @@ function footer() {
          Ready to set a trend ?
         </p>
         <p
-          className='mt-6 text-xl text-center md:text-left lg:text-2xl'
-          style={{ color: "#B0b0b0" ,fontFamily:"sans-serif"}}>
+          className='mt-6 text-xl text-center md:text-left lg:text-xl'
+          style={{ color: "#B0b0b0" ,fontFamily:"Poppins",fontWeight:300}}>
           {" "}
          Then drop us a note. Send us a brief 
           <br className="hidden  md:block"/> Lets chat about how we can create
           <br /> something unforgettable together
         </p>
 
-        <span className='reachout m-auto md:m-0 flex my-4 md:mt-20 p-4 border-2 border-blue-300  w-64 justify-center items-center group  hover:text-white ease-in-out duration-300 '>
+        <span className='reachout m-auto md:m-0 flex my-4 md:mt-44  p-4 border-4 border-blue-400  w-64 justify-center items-center group  hover:text-white ease-in-out duration-300 '>
           <Link to='/contact'>
             <p
               className='mr-2  font-bold   text-blue-500 group-hover:text-white'
@@ -42,7 +42,7 @@ function footer() {
       </div>
       {/* <div id="w-node-d3bfaa92-2268-19e7-7a7b-d1572f2b7894-34f1a05a" class="footer-txt-w"><h3 class="is--lc">Like what you see?</h3><div class="b1--left-text-w"><p class="b1 is--centred is--100">Then drop us a note. Send us a brief. <br/>Let’s chat about how we can create <br/>something unforgettable together.</p></div></div> */}
 
-      <div className=" font-semibold   "  style={{fontFamily:"sans-serif "}}>
+      <div className=" font-semibold   "  style={{fontFamily:"Poppins"}}>
         <a href='https://wa.me/+916238023468'>
           <p className='text-xl md:text-2xl text-center m-2 md:m-0  hover:text-blue-400 text-gray-400'>
             Click{" "}
@@ -55,8 +55,20 @@ function footer() {
         <a href='mailto:Hello@mages.studio'>
           {" "}
           <p
-            className=' mt-8 text-lg text-center  md:text-right'
+            className=' mt-2 text-lg text-center  md:text-right '
+            style={{ color: "#B0b0b0" ,visibility:"hidden"}}>
+            {" "}
+            Hello@mages.studio
+          </p>
+          <p
+            className=' mt-4 text-lg text-center  md:text-right'
             style={{ color: "#B0b0b0" }}>
+            {" "}
+            Hello@mages.studio
+          </p>
+          <p
+            className=' mt-2 text-lg text-center  md:text-right '
+            style={{ color: "#B0b0b0" ,visibility:"hidden"}}>
             {" "}
             Hello@mages.studio
           </p>
@@ -74,7 +86,7 @@ function footer() {
       
            
       
-        <div className=' items-center m-2 hidden md:flex' style={{float:"right"}}>
+        <div className=' items-center m-2 hidden md:flex md:mt-20' style={{float:"right"}}>
           <a href="https://www.instagram.com">
             <img alt=""
               src='  https://www.logo.wine/a/logo/Instagram/Instagram-Logo.wine.svg'
@@ -107,7 +119,7 @@ function footer() {
           </a>
 
           <div className="sociallogo">
-          <a href="https://medium.com">
+          <a href="https://medium.com/@Mages.Studio">
             <img alt=""
             
               src=' https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png'
