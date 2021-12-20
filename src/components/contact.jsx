@@ -10,7 +10,7 @@ function Contact() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className='relative'>
+    <div className='relative' >
 
 
 
@@ -137,7 +137,7 @@ function Contact() {
         <a href="https://wa.me/+916238023468">
         <span
           className=' text-2xl font-bold text-white hover:text-blue-400 ease-in duration-150  my-4 flex '
-          style={{ fontFamily: "Poppins" ,fontWeight:300}}>
+          style={{ fontFamily: "Poppins" ,fontWeight:400}}>
           <svg
           className="w-8 h-8 mx-3 animate-pulse"
             fill='currentcolor'
@@ -158,7 +158,7 @@ function Contact() {
         <a href="mailto:Hello@mages.studio">
         <span
           className=' text-2xl font-bold text-white hover:text-blue-400 ease-in duration-150 text-right flex'
-          style={{ fontFamily: "sans" }}>
+          style={{ fontFamily: "Poppins" }}>
           <svg
            className="w-8 h-8 mx-3 animate-pulse"
             fill='currentcolor'
@@ -198,7 +198,7 @@ function Contact() {
             type='text'
             placeholder='Name Surname'
             className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto'
-            style={{ outlineWidth: 0 ,fontFamily:"sans",width:"95%"}}
+            style={{ outlineWidth: 0 ,fontFamily:"Poppins",width:"95%"}}
           />
           <p
             className=' text-xl md:text-2xl p-4 m-4'
@@ -209,7 +209,7 @@ function Contact() {
             type='text'
             placeholder='Company'
             className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto'
-            style={{ outlineWidth: 0 ,fontFamily:"sans",width:"95%"}}
+            style={{ outlineWidth: 0 ,fontFamily:"Poppins",width:"95%"}}
           />
           <p
             className='text-xl md:text p-4 m-4'
@@ -220,7 +220,7 @@ function Contact() {
             type='text'
             placeholder='youremail@gmail.com'
             className='border-2 hover:border-blue-300  text-blue-500 hover:shadow-xl  text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto'
-            style={{ outlineWidth: 0 ,fontFamily:"sans",width:"95%"}}
+            style={{ outlineWidth: 0 ,fontFamily:"Poppins",width:"95%"}}
 
           />
           <p
@@ -232,7 +232,7 @@ function Contact() {
             type='number'
             placeholder='9995559992'
             className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto'
-            style={{ outlineWidth: 0 ,fontFamily:"sans",width:"95%"}}
+            style={{ outlineWidth: 0 ,fontFamily:"Poppins",width:"95%"}}
 
           />
           <p
@@ -244,7 +244,7 @@ function Contact() {
             type='text'
             placeholder='Details are like good news. The more you share,the better'
             className='border-2 hover:border-blue-300 hover:shadow-xl text-blue-500  text-xl  ease-in duration-300 w-5/6 p-4 h-40 flex m-auto'
-            style={{ outlineWidth: 0 ,fontFamily:"sans",width:"95%"}}
+            style={{ outlineWidth: 0 ,fontFamily:"Poppins",width:"95%"}}
 
           />
 
