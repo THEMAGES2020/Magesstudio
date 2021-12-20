@@ -26,7 +26,7 @@ function Testimonial() {
           style={{ color: "#4a4a4a" }}>
           THANK YOU
         </h1>
-        <p className='text-center text-xl mt-2 p-1 xl:text-2xl' style={{ color: "#b0b0b0" ,fontFamily:"sans-serif"}}>
+        <p className='text-center text-xl mt-2 p-1 xl:text-2xl' style={{ color: "#b0b0b0" ,fontFamily:"Poppins",fontWeight:300}}>
           {" "}
           " We make sure that you step out with successful brands<br/> with latest
           trends and conquer the world unique."
