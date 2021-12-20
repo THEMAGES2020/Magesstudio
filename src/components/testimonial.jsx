@@ -3,8 +3,8 @@ import React from "react";
 function Testimonial() {
   return (
     <div
-      className='  mt-12  flex items-center justify-center  '
-      style={{ height: "100vh" }}>
+      className='  mt-0   flex items-center justify-center  '
+      style={{ height: "90vh" }}>
       <div classname=''>
         <div className='mb-4 '>
           <svg

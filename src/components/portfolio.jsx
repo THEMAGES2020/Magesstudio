@@ -89,7 +89,7 @@ function Portfolio() {
         </Slider>
       </>
 
-      <div className="mailogo flex w-full items-center justify-between md:justify-evenly flex-wrap  mx-2 pt-16 md:pb-12 md:pt-0">
+      <div className="mailogo p-8  flex w-full items-center justify-evenly md:justify-evenly flex-wrap  mx-2 pt-16 md:pb-12 md:pt-0">
 
       <img alt="" src={logo1}       className="logoclass m-1  w-24     md:w-40 md:h-64"  style={{objectFit:"contain"}}/>
       <img alt="" src={logo2}      className="logoclass m-1 w-24  md:w-40 md:h-60"  style={{objectFit:"contain"}} />
