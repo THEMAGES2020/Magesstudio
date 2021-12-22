@@ -25,7 +25,7 @@ function Banner() {
           <p
             className='text-blue-300 p-4 w-4/5 text-3xl'
             style={{
-              fontFamily: "Poppins sans-serif",
+              fontFamily: "Poppins",
               color: "#44b2e5",
               fontWeight: 700,
             }}>
@@ -57,13 +57,13 @@ function Banner() {
           <a href='mailto:Hello@mages.studio'>
             {" "}
             <p className='text-white p-4 w-full text-xl text-center'>
-              hello@pitchday.com
+              hello@mages.com
             </p>
           </a>
         </div>
-        <div className='flex items-center'>
+        <div className='flex items-center w-full justify-between'>
           <p
-            className='text-3xl p-4 md:p-8 md:px-16  '
+            className='text-3xl p-4 md:p-8 md:px-20   '
             style={{
               fontFamily: "poppins",
               color: "#44b2e5",
@@ -72,7 +72,7 @@ function Banner() {
             Mages<span className='text-green-300'></span>
           </p>
           <div
-            style={{ float: "right", marginLeft: "80%" }}
+            style={{ float: "right",}}
             className='md:hidden text-blue-300'>
             {" "}
             <Hamburger toggled={isOpen} toggle={setOpen} />
@@ -155,7 +155,7 @@ function Banner() {
               height='10%'
               fill='currentcolor'>
               <path d='m29.82 0-1.42 1.43 6.35 6.35h-34.75v2.02h34.75l-6.35 6.36 1.42 1.43 8.8-8.8z'></path>
-            </svg>{" "}
+            </svg>
           </span>
         </div>
         {/* <p>hi</p> */}
@@ -163,6 +163,16 @@ function Banner() {
           fill='white'
           className='absolute '
           style={{ height: "fit-content", top: "92%" }}
+          width='100%'
+          height='fit-content'
+          viewBox='0 0 1289 186.38'
+          xmlns='http://www.w3.org/2000/svg'>
+          <path d='m644.5 45.86c-258.99 0-490.56-17.86-644.5-45.86v186.38h1289v-186.38c-153.94 28-385.51 45.86-644.5 45.86z'></path>
+        </svg>
+        <svg
+          fill='white'
+          className=' absolute md:hidden'
+          style={{ height: "fit-content", top: "95%" }}
           width='100%'
           height='fit-content'
           viewBox='0 0 1289 186.38'

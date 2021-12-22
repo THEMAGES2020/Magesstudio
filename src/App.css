@@ -79,6 +79,14 @@
 .block2 {
   height: 90vh;
 }
+@media only screen and (max-width: 425px) {
+  .block1 {
+    height: fit-content;
+  }
+  .block2 {
+    height: fit-content;
+  }
+}
 .block1:hover {
   min-height: 95vh;
   

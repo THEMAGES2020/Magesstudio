@@ -42,7 +42,7 @@ function footer() {
       </div>
       {/* <div id="w-node-d3bfaa92-2268-19e7-7a7b-d1572f2b7894-34f1a05a" class="footer-txt-w"><h3 class="is--lc">Like what you see?</h3><div class="b1--left-text-w"><p class="b1 is--centred is--100">Then drop us a note. Send us a brief. <br/>Let’s chat about how we can create <br/>something unforgettable together.</p></div></div> */}
 
-      <div className=' font-semibold   ' style={{ fontFamily: "Poppins" }}>
+      <div className=' font-semibold  mt-4 flex flex-col justify-center md:items-end w-full md:w-2/5 items-center ' style={{ fontFamily: "Poppins" }}>
         <a href='https://wa.me/+916238023468'>
           <p className='text-xl md:text-2xl text-center m-2 md:m-0  hover:text-blue-400 text-gray-400'>
             Click <span className='font-bold text-blue-500'>here</span> to
@@ -51,18 +51,24 @@ function footer() {
         </a>
         <a href='mailto:Hello@mages.studio'>
           {" "}
-          <p
-            className=' mt-2 text-lg text-center  md:text-right '
+          {/* <p
+            className=' mt-1 text-lg text-center  md:text-right '
             style={{ color: "#B0b0b0", visibility: "hidden" }}>
             {" "}
             Hello@mages.studio
-          </p>
-          <p
-            className=' mt-4 text-lg text-center  md:text-right'
-            style={{ color: "#B0b0b0" }}>
+          </p> */}
+          <a href='mailto:themages2020@gmail.com' className='mt-8'>
             {" "}
-            Hello@mages.studio
-          </p>
+            <p className='text-center  md:text-right text-xl mt-8 text-gray-400 hover:text-blue-400 '>
+              Job & Internship Enquiries
+            </p>
+            {/* <p
+              className=' mt-2 text-lg text-center  md:text-right'
+              style={{ color: "#B0b0b0", visibility: "hidden" }}>
+              {" "}
+              Jobs@mages.studio
+            </p> */}
+          </a>
           <p
             className=' mt-2 text-lg text-center  md:text-right '
             style={{ color: "#B0b0b0", visibility: "hidden" }}>
@@ -70,7 +76,14 @@ function footer() {
             Hello@mages.studio
           </p>
         </a>
-        <a href='mailto:themages2020@gmail.com' className='mt-8'>
+        <p
+          className=' mt-2 text-lg text-center  md:text-right '
+          style={{ color: "#B0b0b0", visibility: "" }}>
+          {" "}
+          Hello@mages.studio
+        </p>
+
+        {/* <a href='mailto:themages2020@gmail.com' className='mt-8'>
           {" "}
           <p className='text-center  md:text-right text-2xl mt-8 text-gray-400 hover:text-blue-400 '>
             Job & Internship Enquiries
@@ -81,10 +94,10 @@ function footer() {
             {" "}
             Jobs@mages.studio
           </p>
-        </a>
+        </a> */}
 
         <div
-          className=' items-center md:m-2 flex md:flex md:mt-20'
+          className=' items-center md:m-2 flex md:flex md:mt-36'
           style={{ float: "right" }}>
           <a href='https://www.instagram.com'>
             {/* <img alt=""
@@ -104,9 +117,15 @@ function footer() {
           </a>
           <a href='https://www.behance.net/Mages'>
             {" "}
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-behance sociallogo1 hover:text-white" viewBox="0 0 16 16">
-  <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z"/>
-</svg>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='16'
+              height='16'
+              fill='currentColor'
+              class='bi bi-behance sociallogo1 hover:text-white'
+              viewBox='0 0 16 16'>
+              <path d='M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z' />
+            </svg>
           </a>
           <a href='https://www.linkedin.com'>
             {/* <img
@@ -114,9 +133,15 @@ function footer() {
               src='https://brandlogos.net/wp-content/uploads/2016/06/linkedin-logo-512x512.png'
               className='w-10 h-10  sociallogo2 '
             /> */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin w-10 h-10  sociallogo2 white hover:text-white " viewBox="0 0 16 16">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-</svg>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='16'
+              height='16'
+              fill='currentColor'
+              className='bi bi-linkedin w-10 h-10  sociallogo2 white hover:text-white '
+              viewBox='0 0 16 16'>
+              <path d='M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z' />
+            </svg>
           </a>
 
           <div className=''>
@@ -127,15 +152,19 @@ function footer() {
                 class
                 Name='w-10'
               /> */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-medium w-10 h-10  sociallogo3 white hover:text-white" viewBox="0 0 16 16">
-               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1770 1000">
-  <circle cx="500" cy="500" r="500"/>
-  <ellipse ry="475" rx="250" cy="501" cx="1296"/>
-  <ellipse cx="1682" cy="502" rx="88" ry="424"/>
-</svg>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='16'
+                height='16'
+                fill='currentColor'
+                className='bi bi-medium w-10 h-10  sociallogo3 white hover:text-white'
+                viewBox='0 0 16 16'>
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1770 1000'>
+                  <circle cx='500' cy='500' r='500' />
+                  <ellipse ry='475' rx='250' cy='501' cx='1296' />
+                  <ellipse cx='1682' cy='502' rx='88' ry='424' />
                 </svg>
-           
+              </svg>
             </a>
           </div>
         </div>

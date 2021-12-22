@@ -89,15 +89,15 @@ function Portfolio() {
         </Slider>
       </>
 
-      <div className="mailogo p-8  flex w-full items-center justify-evenly md:justify-evenly flex-wrap  mx-2 pt-16 md:pb-12 md:pt-0">
+      <div className="mailogo py-4 md:p-8   flex w-full items-center justify-around md:justify-evenly flex-wrap  mx-2 md:pb-12 md:pt-0">
 
-      <img alt="" src={logo1}       className="logoclass m-1  w-24     md:w-40 md:h-64"  style={{objectFit:"contain"}}/>
-      <img alt="" src={logo2}      className="logoclass m-1 w-24  md:w-40 md:h-60"  style={{objectFit:"contain"}} />
+      <img alt="" src={logo1}       className="logoclass m-1  w-2/5   p-2  md:w-40 md:h-64"  style={{objectFit:"contain"}}/>
+      <img alt="" src={logo2}      className="logoclass m-1 w-2/5 p-2 md:w-40 md:h-60"  style={{objectFit:"contain"}} />
      
 
-      <img alt="" src={logo3}      className="logoclass m-1 w-24 md:w-40 md:h-60" style={{objectFit:"contain"}} />
+      <img alt="" src={logo3}      className="logoclass m-1  w-2/5  p-2 md:w-40 md:h-60" style={{objectFit:"contain"}} />
     {/* //  <img alt="" src={logo4}      className="logoclass w-64 h-64" style={{objectFit:"contain"}} /> */}
-      <img alt="" src={logo5}      className="logoclass m-1 w-24  md:w-40 md:h-60" style={{objectFit:"contain"}} />
+      <img alt="" src={logo5}      className="logoclass m-1  w-2/5 p-2  md:w-40 md:h-60" style={{objectFit:"contain"}} />
 
       </div>
 

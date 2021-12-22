@@ -9,8 +9,8 @@ function Testimonial() {
         <div className='mb-4 '>
           <svg
             fill='currentcolor'
-            className='m-auto pb-8 text-blue-400 block w-3/5 md:w-2/5'
-            height='100%'
+            className='m-auto pb-8 text-blue-400 block w-3/5 md:w-2/5  lg:w-2/6' 
+            height='90%'
             viewBox='0 0 235.78 36.16'
             xmlns='http://www.w3.org/2000/svg'>
             &lt;&gt;
@@ -22,7 +22,7 @@ function Testimonial() {
           </svg>
         </div>
         <h1
-          className='text-center text-5xl font-bold xl:text-6xl'
+          className='text-center text-5xl font-bold xl:text-5xl lg:mb-10'
           style={{ color: "#4a4a4a" }}>
           THANK YOU
         </h1>

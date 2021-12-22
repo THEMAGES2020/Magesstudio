@@ -14,7 +14,7 @@ function About() {
         <strong>WHAT WE DO </strong>
       </h1>
 
-      <div className='flex-row md:flex justify-center'>
+      <div className='flex-row md:flex justify-center  '>
         <div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -27,7 +27,7 @@ function About() {
             alt='imger'
             src={brand}
             style={{ objectFit: "cover" }}
-            className='w-full h-2/5'
+            className='w-full h-2/5 mt-2'
           />
           <div className=' md:mx-4 md:mt-12'>
             <p
@@ -45,7 +45,7 @@ function About() {
                 fontFamily: "Poppins" ,fontWeight:300
 
               }}
-              className='p-2  px-8 md:px-5 text-xl md:text-xl lg:text-2xl '>
+              className='p-2  px-8 md:px-5 text-xl md:text-xl lg:text-2xl  lg:mt-3'>
     <span className='about__hover2'>
     Let your brand's unique voice shine through and work it's magic!
               </span>{" "}
@@ -64,7 +64,7 @@ function About() {
             alt='imger'
             src={designsolutions}
             style={{ objectFit: "cover" }}
-            className='h-2/5 w-full'
+            className='h-2/5 w-full mt-2'
           />
           <div className=' md:mx-4 md:mt-12'>
             <p
@@ -80,7 +80,7 @@ function About() {
             fontFamily: "Poppins" ,fontWeight:300
                
               }}
-              className='p-2 text-xl px-8 md:px-5 md:text-lg lg:text-2xl  '>
+              className='p-2 text-xl px-8 md:px-5 md:text-lg lg:text-2xl  lg:mt-3'>
               <span className='about__hover'>
                 Overcome every glitch on the way with techies like us on your
                 side!
