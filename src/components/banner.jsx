@@ -59,7 +59,9 @@ function Banner() {
             </p>
           </a>
         </div>
-        <div className='flex items-center w-full justify-between'>
+        <div
+          className='flex items-center  justify-between '
+          style={{ width: "100%" }}>
           <p
             className='text-3xl p-4 md:p-8 md:px-20   '
             style={{

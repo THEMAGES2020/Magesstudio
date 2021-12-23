@@ -20,14 +20,13 @@ function Blogs() {
 
         console.log(data);
       });
-  });
+  },[]);
   return (
     <div
       className=' bg-gray-200 relative'
       style={{
         minHeight: "100vh",
-        borderBottomRightRadius: "7%",
-        borderBottomLeftRadius: "7%",
+        
       }}>
       <div
         className='absolute flex justify-between  z-10 w-full '
@@ -74,7 +73,7 @@ function Blogs() {
         </div>
         </div>
         <div className="flex justify-between">
-        <div className='flex items-center  justify-between'>
+        <div className='flex items-center w-full  justify-between'>
           <p
             className='text-3xl p-4 md:p-8 md:px-20   '
             style={{
@@ -118,29 +117,34 @@ function Blogs() {
       
       </div>
       </div>
-
-      <div className='top-64  md:top-32 flex flex-wrap md:p-4 justify-center ' >
+{/* 
+ flex flex-col flex-wrap
+*/}
+      {/* <div className='top-64 w-5/6  m-auto md:top-32 md:p-4 justify-center bg-red-200 ' > */}
         {/* {
 
           data?.items.map((item,index)=>{return(
 
             <img src={item.thumbnail} alt=""/>
+            h-full w-full md:w-1/3 md:h-4/5
           )}
           )} */}
+
+
+{/* 
+
         {data.items?.map((item, index) => {
           return (
-            <div className='h-full w-full md:w-1/3 md:h-4/5  m-4 bg-white shadow-2xl hover:shadow-xl p-2'>
+            <div className=' w-2/5 inline-block m-4 bg-white shadow-2xl hover:shadow-xl p-2' style={{height:"fit-content"}}>
               <a href={item.link}>
                 <img
                   src={item.thumbnail}
                   alt=''
-                  className='w-full h-full'
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover" ,}}
                 />
-                <h1 className='text-center font-bold'>{item.title}</h1>
-                {/* <h2>{item.content.length>100?item.content.slice(0,100):item.content}</h2> */}
+                <h1 className='text-left font-bold p-2'>{item.title}</h1>
                 <h2 className="text-gray-600 p-2">{item.content.length>200?`${item.content.replace(/<\/?[^>]+>/gi, '').slice(0,150) + "..."}`:item.content}</h2>
-                <div className='flex items-center'>
+                <div className='flex items-center p-2'>
                   {data ? (
                     <img alt=""
                       src={data?.feed?.image}
@@ -155,14 +159,56 @@ function Blogs() {
                   ) : null}
                   {}
                 </div>
+
+
+
+              
               </a>
+
+            
             </div>
           );
-        })}
+        })} */}
 
+<div style={{columns:2,columnGap:"1px",margin:"0px auto"}} className="w-5/6"  >
+{data.items?.map((item, index) => {
+          return (
+            // <div className='w-5/6  p-4  bg-white shadow-2xl hover:shadow-xl my-2 mr-0' style={{breakInside:"avoid"}} >
+              <a href={item.link} style={{breakInside:"avoid"}} className="rounded flex p-2 flex-col bg-white w-5/6 m-auto my-4 shadow-2xl hover:shadow-xl">
+                <img
+                  src={item.thumbnail}
+                  alt=''
+                  style={{ objectFit: "cover" ,}}
+                />
+                <h1 className='text-left font-bold p-2'>{item.title}</h1>
+                {/* <h2>{item.content.length>100?item.content.slice(0,100):item.content}</h2> */}
+                <h2 className="text-gray-600 p-2">{item.content.length>200?`${item.content.replace(/<\/?[^>]+>/gi, '').slice(0,150) + "..."}`:item.content}</h2>
+                <div className='flex items-center p-2 py-4'>
+                  {data ? (
+                    <img alt=""
+                      src={data?.feed?.image}
+                      className='w-12 h-12  rounded-full'
+                    />
+                  ) : null}
+                  {data ? (
+                    <div className="flex-col px-2">
+                      <p className="text-gray-700">{item?.author}</p>
+                        <p className="text-gray-700">{item?.pubDate.substr(0,10)}</p>
+                    </div>
+                  ) : null}
+                  {}
+                </div>
+                </a>
+            // </div>
+)
+})}
+
+
+
+</div>
         {/* <img src={{url:data?.feed?.image}} className="w-64 h-64"/> */}
       </div>
-    </div>
+    // </div>
   );
 }
 
