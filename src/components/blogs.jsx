@@ -28,7 +28,7 @@ function Blogs() {
   // const abc=""
   return (
     <div
-      className=' bg-gray-200 relative'
+      className=' bg-gray-200 relative pb-4'
       style={{
         minHeight: "100vh",
       }}>
