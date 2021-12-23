@@ -170,11 +170,11 @@ function Blogs() {
           );
         })} */}
 
-<div style={{columns:2,columnGap:"1px",margin:"0px auto"}} className="w-5/6"  >
+<div style={{columnGap:"1px",margin:"0px auto"}} className=" w-11/12 md:w-5/6 grid-cols-1 md:grid-cols-2 "  >
 {data.items?.map((item, index) => {
           return (
             // <div className='w-5/6  p-4  bg-white shadow-2xl hover:shadow-xl my-2 mr-0' style={{breakInside:"avoid"}} >
-              <a href={item.link} style={{breakInside:"avoid"}} className="rounded flex p-2 flex-col bg-white w-5/6 m-auto my-4 shadow-2xl hover:shadow-xl">
+              <a href={item.link} style={{breakInside:"avoid"}} className="rounded flex p-2 flex-col bg-white md:w-5/6 m-auto my-4 shadow-2xl hover:shadow-xl">
                 <img
                   src={item.thumbnail}
                   alt=''
