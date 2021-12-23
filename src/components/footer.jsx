@@ -47,7 +47,7 @@ function footer() {
         style={{ fontFamily: "Poppins" }}>
         <a href='https://wa.me/+916238023468'>
           <p className='text-xl md:text-2xl text-center m-2 md:m-0  hover:text-blue-400 text-gray-400'>
-            Click <span className='font-bold text-blue-500'>here</span> to
+            Click <span className='font-bold text-blue-400'>here</span> to
             Whatsapp us
           </p>
         </a>

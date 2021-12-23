@@ -24,7 +24,7 @@ function Blogs() {
         });
     };
     fetchd();
-  }, [data]);
+  }, []);
   // const abc=""
   return (
     <div
@@ -176,15 +176,15 @@ CONTACT            </p>
         })} */}
 
       <div
-        style={{ columnGap: "1px", margin: "0px auto" }}
-        className='columsmain w-11/12 md:w-5/6 grid-cols-2 md:grid-cols-2 '>
+        style={{ columnGap: "25px", margin: "auto" ,rowGap:"4px"}}
+        className='columsmain w-11/12 md:w-3/4 '>
         {data.items?.map((item, index) => {
           return (
             // <div className='w-5/6  p-4  bg-white shadow-2xl hover:shadow-xl my-2 mr-0' style={{breakInside:"avoid"}} >
             <a
               href={item.link}
-              style={{ breakInside: "avoid" ,boxShadow:"border-box"}}
-              className='rounded inline-flex p-2 flex-col bg-white md:w-5/6 m-auto my-4 shadow-2xl hover:shadow-xl'>
+              style={{ breakInside: "avoid" }}
+              className='rounded inline-flex p-2  flex-col bg-white w-full md:w-full m-auto my-4 shadow-2xl hover:shadow-xl'>
               <img src={item.thumbnail} alt='' style={{ objectFit: "cover" }} />
               <h1 className='text-left font-bold p-2'>{item.title}</h1>
               {/* <h2>{item.content.length>100?item.content.slice(0,100):item.content}</h2> */}
