@@ -145,7 +145,7 @@ function footer() {
           </a>
 
           <div className=''>
-            <a href='https://medium.com/@Mages.Studio'>
+            <a href='https://magesstudio.medium.com/'>
               {/* <img
                 alt=''
                 src=' https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png'

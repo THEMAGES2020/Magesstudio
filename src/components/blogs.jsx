@@ -15,7 +15,7 @@ function Blogs() {
     const fetchd = () => {
       axios
         .get(
-          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@buddhasource"
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@barackobama"
         )
         .then((res) => {
           setmediumdata(res.data);
@@ -183,8 +183,8 @@ CONTACT            </p>
             // <div className='w-5/6  p-4  bg-white shadow-2xl hover:shadow-xl my-2 mr-0' style={{breakInside:"avoid"}} >
             <a
               href={item.link}
-              style={{ breakInside: "avoid" }}
-              className='rounded flex p-2 flex-col bg-white md:w-5/6 m-auto my-4 shadow-2xl hover:shadow-xl'>
+              style={{ breakInside: "avoid" ,boxShadow:"border-box"}}
+              className='rounded inline-flex p-2 flex-col bg-white md:w-5/6 m-auto my-4 shadow-2xl hover:shadow-xl'>
               <img src={item.thumbnail} alt='' style={{ objectFit: "cover" }} />
               <h1 className='text-left font-bold p-2'>{item.title}</h1>
               {/* <h2>{item.content.length>100?item.content.slice(0,100):item.content}</h2> */}
