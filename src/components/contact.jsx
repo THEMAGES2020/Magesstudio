@@ -5,7 +5,7 @@ import videobannner from "../assets/bannernow1.jpg";
 import { Link } from "react-router-dom";
 // import End from "./End"
 import Hamburger from "hamburger-react";
-import twilio from "twilio";
+// import twilio from "twilio";
 import axios from "axios";
 import {db} from "../firebase"
 import { collection, addDoc } from "firebase/firestore"; 

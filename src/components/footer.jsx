@@ -42,7 +42,9 @@ function footer() {
       </div>
       {/* <div id="w-node-d3bfaa92-2268-19e7-7a7b-d1572f2b7894-34f1a05a" class="footer-txt-w"><h3 class="is--lc">Like what you see?</h3><div class="b1--left-text-w"><p class="b1 is--centred is--100">Then drop us a note. Send us a brief. <br/>Let’s chat about how we can create <br/>something unforgettable together.</p></div></div> */}
 
-      <div className=' font-semibold  mt-4 flex flex-col justify-center md:items-end w-full md:w-2/5 items-center ' style={{ fontFamily: "Poppins" }}>
+      <div
+        className=' font-semibold  mt-4 flex flex-col justify-center md:items-end w-full md:w-2/5 items-center '
+        style={{ fontFamily: "Poppins" }}>
         <a href='https://wa.me/+916238023468'>
           <p className='text-xl md:text-2xl text-center m-2 md:m-0  hover:text-blue-400 text-gray-400'>
             Click <span className='font-bold text-blue-500'>here</span> to
@@ -76,9 +78,8 @@ function footer() {
             Hello@mages.studio
           </p>
         </a>
-        <p
-          className=' mt-2 text-lg text-center text-gray-400  md:text-right hover:text-blue-400'
->          {" "}
+        <p className=' mt-2 text-lg text-center text-gray-400  md:text-right hover:text-blue-400'>
+          {" "}
           Hello@mages.studio
         </p>
 

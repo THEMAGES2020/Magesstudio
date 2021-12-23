@@ -3,12 +3,12 @@ import axios from "axios";
 import Hamburger from "hamburger-react";
 import { Link } from "react-router-dom";
 
-import sortAndSetCategory from "./util/SortAndSetCategory";
+// import sortAndSetCategory from "./util/SortAndSetCategory";
 function Blogs() {
   const [data, setmediumdata] = useState([]);
   const [isOpen, setOpen] = useState(false);
-  const URL =
-    "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40Mages.Studio";
+  // const URL =
+  //   "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40Mages.Studio";
 
   useEffect(() => {
     axios
@@ -20,7 +20,7 @@ function Blogs() {
 
         console.log(data);
       });
-  }, []);
+  });
   return (
     <div
       className=' bg-gray-200 relative'
@@ -142,7 +142,7 @@ function Blogs() {
                 <h2 className="text-gray-600 p-2">{item.content.length>200?`${item.content.replace(/<\/?[^>]+>/gi, '').slice(0,150) + "..."}`:item.content}</h2>
                 <div className='flex items-center'>
                   {data ? (
-                    <img
+                    <img alt=""
                       src={data?.feed?.image}
                       className='w-12 h-12  rounded-full'
                     />

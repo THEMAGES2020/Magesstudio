@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
 
 import "../App.css";
-import Modal from "./modal";
-function Banner() { 
+function Banner() {
   const [isOpen, setOpen] = useState(false);
   return (
     <div
@@ -42,11 +41,9 @@ function Banner() {
             </p>
           </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
-          <Link to="/blogs">
+          <Link to='/blogs'>
             {" "}
-            <p className='text-white p-4 w-full text-xl  text-center'>
-              Blog
-            </p>
+            <p className='text-white p-4 w-full text-xl  text-center'>Blog</p>
           </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
           <a href='https://wa.me/+916238023468'>
@@ -73,14 +70,12 @@ function Banner() {
             Mages<span className='text-green-300'></span>
           </p>
           <div
-            style={{ float: "right",}}
+            style={{ float: "right" }}
             className='md:hidden text-blue-300 mr-2'>
             {" "}
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
         </div>
-
-
 
         <div className=' p-8 px-12 hidden lg:flex group '>
           <Link to='/'>
@@ -109,10 +104,9 @@ function Banner() {
           </Link>
         </div>
       </div>
-     {/* // <div className='fixed ' style={{ zIndex:1000,top:"85%",left:"90%"}}><Modal/></div> */}
+      {/* // <div className='fixed ' style={{ zIndex:1000,top:"85%",left:"90%"}}><Modal/></div> */}
 
-      <div className='absolute top-0 ' style={{ height: "100%" ,
-   }}>
+      <div className='absolute top-0 ' style={{ height: "100%" }}>
         <video
           src={video}
           autoPlay
@@ -132,11 +126,11 @@ function Banner() {
         />
         <div
           className='banner__text__div  top-2/4 transform -translate-y-2/4	 p-4 md:px-20  md:py-24  absolute text-5xl md:text-7xl '
-          style={{ fontFamily: "Poppins" ,fontWeight:800}}>
+          style={{ fontFamily: "Poppins", fontWeight: 800 }}>
           <h1
             className='text-white font-black '
-           // style={{ fontFamily: "Poppins sans-serif" }}
-            >
+            // style={{ fontFamily: "Poppins sans-serif" }}
+          >
             WE{" "}
           </h1>
           <span className='text-white'>DESIGN </span>

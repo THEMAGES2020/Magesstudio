@@ -1,7 +1,7 @@
 import React from "react";
 import video from "../assets/22video.mp4";
 import videobannner2 from "../assets/videobannner2.jpg";
-import Mages from "../assets/Mages.png";
+// import Mages from "../assets/Mages.png";
 
 function Dummyside() {
   return (
