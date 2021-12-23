@@ -11,22 +11,25 @@ function Blogs() {
   //   "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40Mages.Studio";
 
   useEffect(() => {
-    axios
-      .get(
-        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@buddhasource"
-      )
-      .then((res) => {
-        setmediumdata(res.data);
+    const fetchd = () => {
+      axios
+        .get(
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@buddhasource"
+        )
+        .then((res) => {
+          setmediumdata(res.data);
 
-        console.log(data);
-      });
-  },[]);
+          console.log(data);
+        });
+    };
+    fetchd();
+  }, [data]);
+  // const abc=""
   return (
     <div
       className=' bg-gray-200 relative'
       style={{
         minHeight: "100vh",
-        
       }}>
       <div
         className='absolute flex justify-between  z-10 w-full '
@@ -71,8 +74,8 @@ function Blogs() {
             </p>
           </a>
         </div>
-        </div>
-        <div className="flex justify-between">
+      </div>
+      <div className='flex justify-between'>
         <div className='flex items-center w-full  justify-between'>
           <p
             className='text-3xl p-4 md:p-8 md:px-20   '
@@ -83,7 +86,9 @@ function Blogs() {
             }}>
             Mages<span className='text-green-300'></span>
           </p>
-          <div style={{ float: "right" ,zIndex:1000}} className='md:hidden text-blue-300'>
+          <div
+            style={{ float: "right", zIndex: 1000 }}
+            className='md:hidden text-blue-300'>
             {" "}
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
@@ -102,7 +107,7 @@ function Blogs() {
             {" "}
             <p
               className='text-xl font-bold p-2 px-6 ease-in duration-100 text-black hover:text-blue-300'
-              style={{ fontFamily: "poppins" , textTransform: "uppercase"}}>
+              style={{ fontFamily: "poppins", textTransform: "uppercase" }}>
               Contact
             </p>
           </Link>{" "}
@@ -110,18 +115,17 @@ function Blogs() {
             {" "}
             <p
               className='text-xl font-bold p-2 px-6 ease-in duration-100 text-black hover:text-blue-300'
-              style={{ fontFamily: "poppins" , textTransform: "uppercase"}}>
+              style={{ fontFamily: "poppins", textTransform: "uppercase" }}>
               Blog
             </p>
           </Link>
-      
+        </div>
       </div>
-      </div>
-{/* 
+      {/* 
  flex flex-col flex-wrap
 */}
       {/* <div className='top-64 w-5/6  m-auto md:top-32 md:p-4 justify-center bg-red-200 ' > */}
-        {/* {
+      {/* {
 
           data?.items.map((item,index)=>{return(
 
@@ -130,8 +134,7 @@ function Blogs() {
           )}
           )} */}
 
-
-{/* 
+      {/* 
 
         {data.items?.map((item, index) => {
           return (
@@ -170,44 +173,52 @@ function Blogs() {
           );
         })} */}
 
-<div style={{columnGap:"1px",margin:"0px auto"}} className=" w-11/12 md:w-5/6 grid-cols-1 md:grid-cols-2 "  >
-{data.items?.map((item, index) => {
+      <div
+        style={{ columnGap: "1px", margin: "0px auto" }}
+        className=' w-11/12 md:w-5/6 grid-cols-1 md:grid-cols-2 '>
+        {data.items?.map((item, index) => {
           return (
             // <div className='w-5/6  p-4  bg-white shadow-2xl hover:shadow-xl my-2 mr-0' style={{breakInside:"avoid"}} >
-              <a href={item.link} style={{breakInside:"avoid"}} className="rounded flex p-2 flex-col bg-white md:w-5/6 m-auto my-4 shadow-2xl hover:shadow-xl">
-                <img
-                  src={item.thumbnail}
-                  alt=''
-                  style={{ objectFit: "cover" ,}}
-                />
-                <h1 className='text-left font-bold p-2'>{item.title}</h1>
-                {/* <h2>{item.content.length>100?item.content.slice(0,100):item.content}</h2> */}
-                <h2 className="text-gray-600 p-2">{item.content.length>200?`${item.content.replace(/<\/?[^>]+>/gi, '').slice(0,150) + "..."}`:item.content}</h2>
-                <div className='flex items-center p-2 py-4'>
-                  {data ? (
-                    <img alt=""
-                      src={data?.feed?.image}
-                      className='w-12 h-12  rounded-full'
-                    />
-                  ) : null}
-                  {data ? (
-                    <div className="flex-col px-2">
-                      <p className="text-gray-700">{item?.author}</p>
-                        <p className="text-gray-700">{item?.pubDate.substr(0,10)}</p>
-                    </div>
-                  ) : null}
-                  {}
-                </div>
-                </a>
+            <a
+              href={item.link}
+              style={{ breakInside: "avoid" }}
+              className='rounded flex p-2 flex-col bg-white md:w-5/6 m-auto my-4 shadow-2xl hover:shadow-xl'>
+              <img src={item.thumbnail} alt='' style={{ objectFit: "cover" }} />
+              <h1 className='text-left font-bold p-2'>{item.title}</h1>
+              {/* <h2>{item.content.length>100?item.content.slice(0,100):item.content}</h2> */}
+              <h2 className='text-gray-600 p-2'>
+                {item.content.length > 200
+                  ? `${
+                      item.content.replace(/<\/?[^>]+>/gi, "").slice(0, 150) +
+                      "..."
+                    }`
+                  : item.content}
+              </h2>
+              <div className='flex items-center p-2 py-4'>
+                {data ? (
+                  <img
+                    alt=''
+                    src={data?.feed?.image}
+                    className='w-12 h-12  rounded-full'
+                  />
+                ) : null}
+                {data ? (
+                  <div className='flex-col px-2'>
+                    <p className='text-gray-700'>{item?.author}</p>
+                    <p className='text-gray-700'>
+                      {item?.pubDate.substr(0, 10)}
+                    </p>
+                  </div>
+                ) : null}
+                {}
+              </div>
+            </a>
             // </div>
-)
-})}
-
-
-
-</div>
-        {/* <img src={{url:data?.feed?.image}} className="w-64 h-64"/> */}
+          );
+        })}
       </div>
+      {/* <img src={{url:data?.feed?.image}} className="w-64 h-64"/> */}
+    </div>
     // </div>
   );
 }
