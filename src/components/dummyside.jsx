@@ -20,7 +20,7 @@ function Dummyside() {
           }}>
           Design is the silent ambassador of your brand
         </p>
-        <img
+        {/* <img
           src={Mages}
           alt=''
           className='w-40 h-40 absolute hidden md:block  mt-4  md:absolute top-2/3 md:top-2/4 transform	-translate-y-2/4 animate-pulse left-1/3  md:left-40'
@@ -31,7 +31,7 @@ function Dummyside() {
           alt=''
           className='w-40 h-40 absolute hidden   mt-4  md:absolute top-2/3 md:top-2/4 transform	-translate-y-2/4 animate-pulse left-20'
           style={{ zIndex: 1, filter: "brightness(1.2)" }}
-        />
+        /> */}
         <video
           src={video}
           autoPlay

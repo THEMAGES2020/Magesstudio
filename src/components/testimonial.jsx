@@ -4,7 +4,7 @@ function Testimonial() {
   return (
     <div
       className='  mt-0   flex items-center justify-center  '
-      style={{ height: "90vh" }}>
+      style={{ height: "85vh" }}>
       <div classname=''>
         <div className='mb-4 '>
           <svg

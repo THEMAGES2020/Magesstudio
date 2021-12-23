@@ -87,6 +87,14 @@
     height: fit-content;
   }
 }
+@media only screen and (max-width: 425px) {
+  .block1:hover {
+    height: fit-content;
+  }
+  .block2:hover {
+    height: fit-content;
+  }
+}
 .block1:hover {
   min-height: 95vh;
   

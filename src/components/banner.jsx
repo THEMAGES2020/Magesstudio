@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
 
 import "../App.css";
-function Banner() {
+import Modal from "./modal";
+function Banner() { 
   const [isOpen, setOpen] = useState(false);
   return (
     <div
@@ -41,12 +42,12 @@ function Banner() {
             </p>
           </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
-          <a href="https://medium.com/@Mages.Studio">
+          <Link to="/blogs">
             {" "}
             <p className='text-white p-4 w-full text-xl  text-center'>
               Blog
             </p>
-          </a>
+          </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
           <a href='https://wa.me/+916238023468'>
             <p className='text-white p-4 w-full text-xl text-center'>
@@ -73,40 +74,45 @@ function Banner() {
           </p>
           <div
             style={{ float: "right",}}
-            className='md:hidden text-blue-300'>
+            className='md:hidden text-blue-300 mr-2'>
             {" "}
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
         </div>
 
-        <div className=' p-8 px-12 hidden lg:flex group'>
-          <a href='/'>
+
+
+        <div className=' p-8 px-12 hidden lg:flex group '>
+          <Link to='/'>
             {" "}
             <p
-              className='text-xl font-bold p-2 px-6 ease-in duration-100 text-white hover:text-blue-300'
+              className='text-base font-bold p-2 px-6 ease-in duration-100 text-white hover:text-blue-300'
               style={{ fontFamily: "poppins" }}>
-              Home{" "}
+              HOME{" "}
             </p>
-          </a>
+          </Link>
           <Link to='/contact'>
             {" "}
             <p
-              className='text-xl font-bold p-2 px-6 ease-in duration-100 text-white hover:text-blue-300'
+              className='text-base font-bold p-2 px-6 ease-in duration-100 text-white hover:text-blue-300'
               style={{ fontFamily: "poppins" }}>
-              Contact
+              CONTACT
             </p>
           </Link>{" "}
-          <a href='https://medium.com/@Mages.Studio'>
+          <Link to='/blogs'>
             {" "}
             <p
-              className='text-xl font-bold p-2 px-6 ease-in duration-100 text-white hover:text-blue-300'
+              className='text-base font-bold p-2 px-6 ease-in duration-100 text-white hover:text-blue-300'
               style={{ fontFamily: "poppins" }}>
-              Blog
+              BLOG
             </p>
-          </a>
+          </Link>
         </div>
       </div>
-      <div className='absolute top-0 ' style={{ height: "100%" }}>
+     {/* // <div className='fixed ' style={{ zIndex:1000,top:"85%",left:"90%"}}><Modal/></div> */}
+
+      <div className='absolute top-0 ' style={{ height: "100%" ,
+   }}>
         <video
           src={video}
           autoPlay

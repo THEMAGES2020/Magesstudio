@@ -59,7 +59,7 @@ function footer() {
           </p> */}
           <a href='mailto:themages2020@gmail.com' className='mt-8'>
             {" "}
-            <p className='text-center  md:text-right text-xl mt-8 text-gray-400 hover:text-blue-400 '>
+            <p className='text-center  md:text-right text-lg mt-8 text-gray-400 hover:text-blue-400 '>
               Job & Internship Enquiries
             </p>
             {/* <p
@@ -70,16 +70,15 @@ function footer() {
             </p> */}
           </a>
           <p
-            className=' mt-2 text-lg text-center  md:text-right '
+            className=' mt-2 text-lg text-center  md:text-right hover:text-blue-400'
             style={{ color: "#B0b0b0", visibility: "hidden" }}>
             {" "}
             Hello@mages.studio
           </p>
         </a>
         <p
-          className=' mt-2 text-lg text-center  md:text-right '
-          style={{ color: "#B0b0b0", visibility: "" }}>
-          {" "}
+          className=' mt-2 text-lg text-center text-gray-400  md:text-right hover:text-blue-400'
+>          {" "}
           Hello@mages.studio
         </p>
 

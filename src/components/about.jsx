@@ -18,7 +18,7 @@ function About() {
         <div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className='block2 p-4 m-2   mb-16 md:px-2 md:py-0 md:mt-0   content-center shadow-xl hover:shadow-2xl  border-4 border-white md:border-gray-100 hover:border-blue-400 ease-in duration-200 hover:translate-x-4  md:w-5/12 lg:w-1/3'
+          className='block2 p-4 md:m-2   mb-16 md:px-2 md:py-0 md:mt-0   content-center shadow-xl hover:shadow-2xl  border-4 border-white md:border-gray-100 hover:border-blue-400 ease-in duration-200 hover:translate-x-4  w-5/6 m-auto md:w-5/12 lg:w-1/3'
           >
           <video
             autoPlay
@@ -56,7 +56,8 @@ function About() {
         <div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className='block1 p-4 m-2   mb-16 md:px-2 md:py-0 md:mt-0  content-center shadow-xl hover:shadow-2xl  border-4 border-white md:border-gray-100 hover:border-blue-400 ease-in duration-200 hover:translate-x-4  md:w-5/12 lg:w-1/3'
+          className='block1 p-4 md:m-2   mb-16 md:px-2 md:py-0 md:mt-0  content-center shadow-2xl hover:shadow-xl border-2 border-gray-1g
+          00 md:border-gray-100 hover:border-blue-400 ease-in duration-200 hover:translate-x-4 w-5/6 m-auto md:w-5/12 lg:w-1/3'
           >          <video
             autoPlay
             muted

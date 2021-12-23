@@ -13,6 +13,7 @@ import {
   Route,
   
 } from "react-router-dom";
+import Blogs from "./components/blogs";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
          
           <Route path="/contact">
           <Contact/>
+          </Route>
+          <Route path="/blogs">
+            <Blogs/>
           </Route>
           <Route path="/">
          
