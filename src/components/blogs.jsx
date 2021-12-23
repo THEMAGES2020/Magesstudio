@@ -20,11 +20,11 @@ function Blogs() {
         .then((res) => {
           setmediumdata(res.data);
 
-          console.log(data);
+          // console.log(data);
         });
     };
     fetchd();
-  }, []);
+  }, [data]);
   // const abc=""
   return (
     <div
