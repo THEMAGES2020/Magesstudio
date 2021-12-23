@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Hamburger from "hamburger-react";
 import { Link } from "react-router-dom";
+import "../App.css"
 
 // import sortAndSetCategory from "./util/SortAndSetCategory";
 function Blogs() {
@@ -175,7 +176,7 @@ function Blogs() {
 
       <div
         style={{ columnGap: "1px", margin: "0px auto" }}
-        className=' w-11/12 md:w-5/6 grid-cols-1 md:grid-cols-2 '>
+        className='columsmain w-11/12 md:w-5/6 grid-cols-2 md:grid-cols-2 '>
         {data.items?.map((item, index) => {
           return (
             // <div className='w-5/6  p-4  bg-white shadow-2xl hover:shadow-xl my-2 mr-0' style={{breakInside:"avoid"}} >
