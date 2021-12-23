@@ -53,13 +53,12 @@ function Blogs() {
           <Link to='/contact'>
             {" "}
             <p className='text-white p-4 w-full text-xl  text-center'>
-              Contact
-            </p>
+CONTACT            </p>
           </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
           <Link to='/blog'>
             {" "}
-            <p className='text-white p-4 w-full text-xl  text-center'>Blog</p>
+            <p className='text-white p-4 w-full text-xl  text-center'>BLOG</p>
           </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
           <a href='https://wa.me/+916238023468'>
