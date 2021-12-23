@@ -38,6 +38,7 @@ function Blogs() {
         <div
           style={{ display: !isOpen ? "none" : "block" }}
           className='bg-gray-800  w-full pb-16 h-76'>
+            <Link to="/">
           <p
             className='text-blue-300 p-4 w-4/5 text-3xl'
             style={{
@@ -46,7 +47,7 @@ function Blogs() {
               fontWeight: 700,
             }}>
             Mages
-          </p>
+          </p></Link>
 
           <p className='text-white text-xl p-4 w-full  text-center'>HOME</p>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
@@ -77,6 +78,7 @@ CONTACT            </p>
       </div>
       <div className='flex justify-between'>
         <div className='flex items-center w-full  justify-between'>
+          <Link to="/">
           <p
             className='text-3xl p-4 md:p-8 md:px-20   '
             style={{
@@ -85,7 +87,7 @@ CONTACT            </p>
               fontWeight: 700,
             }}>
             Mages<span className='text-green-300'></span>
-          </p>
+          </p></Link>
           <div
             style={{ float: "right", zIndex: 1000 }}
             className='md:hidden text-blue-300'>
