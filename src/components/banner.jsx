@@ -55,7 +55,7 @@ function Banner() {
           <a href='mailto:Hello@mages.studio'>
             {" "}
             <p className='text-white p-4 w-full text-xl text-center'>
-              hello@mages.com
+              hello@mages.studio
             </p>
           </a>
         </div>

@@ -8,8 +8,8 @@ function Testimonial() {
       <div classname=''>
         <div className='mb-4 '>
           <svg
-            fill='currentcolor'
-            className='m-auto pb-8 text-blue-400 block w-3/5 md:w-2/5  lg:w-2/6' 
+            fill='#44b2e5'
+            className='m-auto pb-8  block w-3/5 md:w-2/5  lg:w-2/6' 
             height='90%'
             viewBox='0 0 235.78 36.16'
             xmlns='http://www.w3.org/2000/svg'>

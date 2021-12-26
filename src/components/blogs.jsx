@@ -49,7 +49,7 @@ function Blogs() {
             Mages
           </p></Link>
 
-          <p className='text-white text-xl p-4 w-full  text-center'>HOME</p>
+          <Link to='/contact'>   <p className='text-white text-xl p-4 w-full  text-center'>HOME</p></Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
           <Link to='/contact'>
             {" "}
@@ -71,13 +71,13 @@ CONTACT            </p>
           <a href='mailto:Hello@mages.studio'>
             {" "}
             <p className='text-white p-4 w-full text-xl text-center'>
-              hello@mages.com
+              hello@mages.studio
             </p>
           </a>
         </div>
       </div>
-      <div className='flex justify-between'>
-        <div className='flex items-center w-full  justify-between'>
+      <div className='flex justify-between  m-auto' style={{width:"95vw"}}>
+        <div className='flex items-center w-full  justify-between '>
           <Link to="/">
           <p
             className='text-3xl p-4 md:p-8 md:px-20   '
@@ -97,18 +97,18 @@ CONTACT            </p>
         </div>
 
         <div className=' p-8 px-12 hidden md:flex group'>
-          <a href='/'>
+          <Link to='/'>
             {" "}
             <p
-              className='text-xl font-bold p-2 px-6 ease-in duration-100 text-black hover:text-blue-300'
+              className='text-base font-bold p-2 px-6 ease-in duration-100 text-black hover:text-blue-300'
               style={{ fontFamily: "poppins", textTransform: "uppercase" }}>
               HOME{" "}
             </p>
-          </a>
+          </Link>
           <Link to='/contact'>
             {" "}
             <p
-              className='text-xl font-bold p-2 px-6 ease-in duration-100 text-black hover:text-blue-300'
+              className='text-base font-bold p-2 px-6 ease-in duration-100 text-black hover:text-blue-300'
               style={{ fontFamily: "poppins", textTransform: "uppercase" }}>
               Contact
             </p>
@@ -116,7 +116,7 @@ CONTACT            </p>
           <Link to='/blogs'>
             {" "}
             <p
-              className='text-xl font-bold p-2 px-6 ease-in duration-100 text-black hover:text-blue-300'
+              className='text-base font-bold p-2 px-6 ease-in duration-100 text-black hover:text-blue-300'
               style={{ fontFamily: "poppins", textTransform: "uppercase" }}>
               Blog
             </p>

@@ -18,12 +18,32 @@ function Contact() {
   const [email, setemail] = useState("");
   const [work, setWork] = useState("");
   const [click, setonClick] = useState(false);
+  function ValidateEmail(mail) 
+{
+ if (/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/.test(email))
+  {
+    return (true)
+  }
+    //alert("You have entered an invalid email address!")
+    return (false)
+}
   const details =
     Name + " " + Company + " " + mobile + " " + email + " " + work;
   const send = async () => {
-    setonClick(!onclick)
-    // await addDoc(collection(db, 'notes'), coin);
+     
+    if(Name === ""  ){
+      alert("Please Enter Your Name")
+return
+    }
 
+if (mobile==="" && email === ""){
+  alert("Please Enter Your Mobile Number or Email")
+  return
+}
+if ( !ValidateEmail(email)){
+  alert("You have entered an invalid email address!")
+  return
+}
     try{
       const docref=await addDoc(collection(db,"messages"),{
 Name,Company,mobile,email,work
@@ -57,6 +77,8 @@ Name,Company,mobile,email,work
         setCompany("");
         setemail("");
         setName("");
+        setonClick(!onclick)
+
       })
       .catch((err) => {
         console.log(err);
@@ -90,13 +112,12 @@ Name,Company,mobile,email,work
           <Link to='/contact'>
             {" "}
             <p className='text-white p-4 w-full text-xl  text-center'>
-              Contact
-            </p>
+CONTACT            </p>
           </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
           <Link to='/blogs'>
             {" "}
-            <p className='text-white p-4 w-full text-xl  text-center'>Blog</p>
+            <p className='text-white p-4 w-full text-xl  text-center'>BLOG</p>
           </Link>
           <div className='h-1 w-4/5 m-auto text-center bg-blue-300'></div>
 
@@ -109,7 +130,7 @@ Name,Company,mobile,email,work
           <a href='mailto:Hello@mages.studio'>
             {" "}
             <p className='text-white p-4 w-full text-xl text-center'>
-              hello@mages.com
+              hello@mages.studio
             </p>
           </a>
         </div>
@@ -199,16 +220,16 @@ Name,Company,mobile,email,work
             NEW PROJECT ?
           </p>
           <div className='m-2  flex flex-col items-start md:items-end '>
-            <span className='text-xl font-medium text-white hover:text-white flex'>
+            <span className='sm:text-lg md:text-xl font-medium text-white hover:text-white flex'>
               If you don’t tell us, we’ll never know.
             </span>
             <a href='https://wa.me/+916238023468'>
               <span
-                className=' text-xl font-bold  text-white hover:text-blue-400 ease-in duration-150  my-4 flex '
+                className='text-lg md:text-xl font-bold text-center  text-white hover:text-blue-400 ease-in duration-150  my-4 flex items-center'
                 style={{ fontFamily: "Poppins", fontWeight: 400 }}>
                 <svg
-                  className='w-8 h-8 mx-2 md:mx-3  text-blue-400'
-                  fill='currentcolor'
+                  className='w-6 h-6   md:w-8 md:h-8 mx-2 md:mx-3  '
+                  fill='#44b2e5'
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 49.89 50.11'>
                   <defs>
@@ -219,17 +240,17 @@ Name,Company,mobile,email,work
                     d='M42.62,7.28a24.85,24.85,0,0,0-39.1,30L0,50.11l13.17-3.45a24.78,24.78,0,0,0,11.87,3h0A24.84,24.84,0,0,0,42.62,7.28M25.05,45.49h0a20.63,20.63,0,0,1-10.51-2.88l-.75-.44L6,44.21,8.05,36.6l-.49-.78a20.65,20.65,0,1,1,17.49,9.67M36.37,30c-.62-.31-3.67-1.81-4.24-2s-1-.31-1.39.31-1.61,2-2,2.44-.72.46-1.34.15a16.8,16.8,0,0,1-5-3.08A18.51,18.51,0,0,1,19,23.53c-.36-.62,0-1,.27-1.26s.63-.73.94-1.09a4.21,4.21,0,0,0,.62-1,1.13,1.13,0,0,0-.06-1.08c-.15-.31-1.39-3.37-1.91-4.61s-1-1-1.4-1.06-.77,0-1.19,0a2.29,2.29,0,0,0-1.65.78,7,7,0,0,0-2.17,5.18c0,3.05,2.22,6,2.53,6.42s4.38,6.68,10.6,9.36a35.12,35.12,0,0,0,3.54,1.31,8.55,8.55,0,0,0,3.91.25c1.2-.18,3.67-1.5,4.19-2.95a5.11,5.11,0,0,0,.36-2.95c-.15-.26-.56-.42-1.19-.73'></path>
                 </svg>{" "}
                 Click{" "}
-                <p className='font-semibold  mx-2 text-blue-400'> here </p> to
+                <p className='font-semibold  mx-2 ' style={{color:"#44b2e5"}}> here </p> to
                 WhatsApp us{" "}
               </span>
             </a>
             <a href='mailto:Hello@mages.studio'>
               <span
-                className=' text-xl font-semibold text-white hover:text-blue-400 ease-in duration-150 text-right flex'
+                className=' text-xl font-semibold text-white hover:text-blue-400 ease-in duration-150 text-right flex items-center'
                 style={{ fontFamily: "Poppins" }}>
                 <svg
-                  className='w-8 h-8 mx-2 md:mx-3 text-blue-400'
-                  fill='currentcolor'
+                  className='w-6 h-6   md:w-8 md:h-8 mx-2 md:mx-3 '
+                  fill='#44b2e5'
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 56.01 40.01'>
                   <defs>
@@ -239,7 +260,7 @@ Name,Company,mobile,email,work
                     class='a'
                     d='M54,0H2A2,2,0,0,0,0,2V38a2,2,0,0,0,2,2H54a2,2,0,0,0,2-2V2A2,2,0,0,0,54,0ZM50.73,4,28,21.48,5.28,4ZM52,36H4V8.06L26.79,25.59a2,2,0,0,0,2.44,0L52,8.06Z'></path>
                 </svg>
-                hello@mages.com
+                hello@mages.studio
               </span>
             </a>
           </div>
@@ -258,7 +279,7 @@ Name,Company,mobile,email,work
             onChange={(e) => setName(e.target.value)}
             type='text'
             placeholder='Name Surname'
-            className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
+            className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-base md:text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
             style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
           />
           <p
@@ -272,7 +293,7 @@ Name,Company,mobile,email,work
             onChange={(e) => setCompany(e.target.value)}
             type='text'
             placeholder='Company'
-            className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
+            className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-base md:text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
             style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
           />
           <p
@@ -284,9 +305,9 @@ Name,Company,mobile,email,work
             required
             value={email}
             onChange={(e) => setemail(e.target.value)}
-            type='text'
+            type='email'
             placeholder='youremail@gmail.com'
-            className='border-2 hover:border-blue-300  text-blue-500 hover:shadow-xl  text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
+            className='border-2 hover:border-blue-300  text-blue-500 hover:shadow-xl  text-base md:text-xl    ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
             style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
           />
           <p
@@ -300,7 +321,7 @@ Name,Company,mobile,email,work
             onChange={(e) => setMobile(e.target.value)}
             type='number'
             placeholder='9995559992'
-            className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
+            className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-base md:text-xl    ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
             style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
           />
           <p
@@ -308,20 +329,30 @@ Name,Company,mobile,email,work
             style={{ color: "#4a4a4a" }}>
             Tell us a bit about your project
           </p>
-          <input
+          {/* <input
             required
             value={work}
             onChange={(e) => setWork(e.target.value)}
             type='text'
             placeholder='Details are like good news. The more you share,the better'
-            className='border-2 hover:border-blue-300 hover:shadow-xl text-blue-500  text-xl  ease-in duration-300 w-5/6 p-4 h-40 flex m-auto md:mb-2'
+            className='border-2 hover:border-blue-300 hover:shadow-xl text-blue-500  text-base md:text-xl   ease-in duration-300 w-5/6 p-4 h-40 flex m-auto md:mb-2'
+            style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
+          /> */}
+            <textarea
+            required
+            value={work}
+            onChange={(e) => setWork(e.target.value)}
+            type='text'
+            placeholder='Details are like good news. The more you share,the better'
+            className='border-2 hover:border-blue-300 hover:shadow-xl text-blue-500  text-base md:text-xl   ease-in duration-300 w-5/6 p-4 h-40 flex m-auto md:mb-2'
             style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
           />
+
 
           {!click ? (
             <p
               onClick={() => send()}
-              className='reachout border-2 flex justify-center items-center mt-8 md:mx-8  font-bold border-blue-300 md:p-4 h-16  w-4/5 md:w-2/5 m-4 text-green-300 text-xl  hover:text-white ease-linear duration-300'>
+              className='reachout border-2 flex justify-center items-center mt-8 md:mx-8  font-bold  md:p-4 h-16  w-4/5 md:w-2/5 m-4 text-green-300 text-xl  hover:text-white ease-linear duration-300' style={{borderColor:"#44b2e5"}}>
               Send Message &nbsp;{" "}
               <svg
                 viewBox='0 0 38.62 17.59'
@@ -343,8 +374,7 @@ Name,Company,mobile,email,work
                 fill='currentcolor'>
                 <path d='m29.82 0-1.42 1.43 6.35 6.35h-34.75v2.02h34.75l-6.35 6.36 1.42 1.43 8.8-8.8z'></path>
               </svg> */}
-              We got your message and we will reach out to you soon
-            </p>
+            Thank you! We will get in touch with you shortly            </p>
           )}
         </div>
       </div>
